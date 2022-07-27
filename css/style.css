@@ -5,45 +5,17 @@
 }
 
 body {
-    /* width: 495px;
-    height: 842px; */
+    background: url(../img/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: sans-serif;
-    color: #eee;
+    color: #000;
 }
 
-section {
-    margin-bottom: 18px;
-}
-
-section h1 {
-    margin-bottom: 10px;
-    color: aqua;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ccc;
-    font-family: poppins;
-    font-weight: bold;
-}
-
-section p {
-    margin-left: 15px;
-    margin-top: 18px;
-    font-style: italic;
-}
-
-section li {
-    list-style: disc;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-style: italic;
-}
-
-.container {
-    display: flex;
-    width: 80vw;
-    background-color: darkslategray;
-    margin: 0 auto;
-    padding: 40px 40px 0 40px;
-    /* font-size: 1.1em; */
+a {
+    text-decoration: none;
+    color: darkslateblue;
 }
 
 #profile {
@@ -58,28 +30,77 @@ section li {
     width: 100%;
     text-align: center;
     font-size: 1.2em;
-    background-color: darkolivegreen;
     padding: 40px;
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    background: rgba(238, 238, 238, 0.2);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    margin-bottom: 10px;
+    color: darkslateblue;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+section p {
+    padding: 10px;
+    font-style: italic;
+}
+
+section li {
+    list-style: none;
+    padding: 5px 10px;
+    font-style: italic;
+}
+
+section li:nth-child(odd) {
+    background: rgba(238, 238, 238, 0.4);
+}
+
+.skill li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    font-style: italic;
+}
+
+.skill_level {
+    text-align: right;
 }
 
 .left {
     width: 50%;
-    background-color: darkolivegreen;
-    padding: 40px;
-    margin-right: 40px;
-    margin-bottom: 40px;
+    padding-left: 40px;
+    margin-right: 20px;
+    /* margin-bottom: 40px; */
 }
 
 .right {
     width: 50%;
-    background-color: darkolivegreen;
-    padding: 40px;
-    margin-bottom: 40px;
+    padding-right: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .light {
     font-weight: lighter;
     margin-bottom: 10px;
+}
+
+.experience ul li {
+    padding: 15px 10px;
 }
 
 @media (max-width: 996px) {
@@ -94,6 +115,7 @@ section li {
     }
     .right,
     .left {
+        padding: 0 40px;
         width: 100%;
         margin: none;
     }
